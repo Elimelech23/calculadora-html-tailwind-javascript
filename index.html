@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500 flex justify-center items-center w-screen h-screen">
+    <div class="w-96 bg-white overflow-hidden rounded-3xl shadow-2xl" style="height: 600px;">
+        <div>
+            <input class="w-96 h-24 outline-0 px-5 text-3xl " style="text-align:right;" type="text" id="resultado" placeholder="0">
+        </div>
+        
+        <div class="w-full h-24 bg-gray-500 flex justify-center items-center gap-7 text-3xl font-bold">
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200" value="1" onclick="numeros(7);">7</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200" value="2" onclick="numeros(8);">8</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200" value="3" onclick="numeros(9);">9</button>
+            <button class="w-16 h-16 bg-green-300 rounded-full hover:scale-110 hover:duration-200" value="4" onclick="numeros('+');">+</button>
+        </div>
+        
+        <div class="w-full h-24 bg-gray-500 flex justify-center items-center gap-7 text-3xl font-bold">
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="4" onclick="numeros(4);">4</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="5" onclick="numeros(5);">5</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="6" onclick="numeros(6);">6</button>
+            <button class="w-16 h-16 bg-red-300 rounded-full hover:scale-110 hover:duration-200 " value="-" onclick="numeros('-');">-</button>
+        </div>
+        
+        
+        <div class="w-full h-24 bg-gray-500 flex justify-center items-center gap-7 text-3xl font-bold">
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="7" onclick="numeros(1);">1</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="8" onclick="numeros(2);">2</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="9" onclick="numeros(3);">3</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="/" onclick="numeros('/');">/</button>
+        </div>
+        
+        <div class="w-full h-24 bg-gray-500 flex justify-center items-center gap-7 text-3xl font-bold">
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="C" onclick="formatea();">C</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="0" onclick="numeros(0);">0</button>
+            
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="." onclick="numeros('.');">.</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200" value="*" onclick="numeros('*');">x</button>
+        </div>
+        <div class="w-full h-32	 bg-gray-500 flex justify-beetwen items-center gap-7 text-3xl font-bold px-5">
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value="<" onclick="numeros('<');"><</button>
+            <button class="w-16 h-16 bg-gray-300 rounded-full hover:scale-110 hover:duration-200 " value=">" onclick="numeros('>');">></button>
+            <button class="w-36 h-16 bg-orange-300 rounded-full hover:scale-110 hover:duration-200 " value="=" onclick="operacion();">=</button>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>
