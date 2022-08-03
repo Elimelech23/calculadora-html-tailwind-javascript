@@ -3,11 +3,11 @@ function numeros(valor){
 }
 
 function operacion(){
-    var clear = document.getElementById("resultado").value;
-    if(clear == 0){
+    var opera = document.getElementById("resultado").value;
+    if(opera == 0){
         document.getElementById("resultado").value = "Sin operacion";
     } else{
-        document.getElementById("resultado").value = eval(clear);
+        document.getElementById("resultado").value = eval(opera);
     }
 }
 
